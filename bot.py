@@ -63,24 +63,26 @@ def handle(msg):
           bot.sendMessage(chat_id, coelho[random.randint(0,len(coelho)-1)], 'Markdown')
       elif (command == '/frasegandhi') or (command == '/frasegandhi@Motivationalbot'):
           bot.sendMessage(chat_id, gandhi[random.randint(0,len(gandhi)-1)], 'Markdown')
+      elif (command == '/fraserandom') or (command == '/fraserandom@FrasesRATbot'):
+          bot.sendMessage(chat_id, todas[random.randint(0,len(todas)-1)], 'Markdown')
       # Comandos para imagenes
       elif (command == '/neruda') or (command == '/neruda@Motivationalbot'):
-          bot.sendPhoto(chat_id, 'AgADBAADsacxGzUzbQxX2lpmzJvN1QMdQxkABKp9NOQsw5y_u8wAAgI')
+          bot.sendPhoto(chat_id, 'AgADBAADsacxGzUzbQxX2l2mzJvN1QMdQxkABKp9NOQsw5y_u8wAAgI')
       elif (command == '/franklin') or (command == '/franklin@Motivationalbot'):
-          bot.sendPhoto(chat_id, 'AgADBAADsqcxGzUzbQx8UBuLe2KPtekgQxkABBOuVRKLlv0FnMsAAgI')
+          bot.sendPhoto(chat_id, 'AgADBAADsqcxGzUzbQx8UB2Le2KPtekgQxkABBOuVRKLlv0FnMsAAgI')
       elif (command == '/bonnard') or (command == '/bonnard@Motivationalbot'):
-          bot.sendPhoto(chat_id, 'AgADBAADs6cxGzUzbQxexPmT2a-adBglKRkABMpEBOZWpCSM28kBAAEC')
+          bot.sendPhoto(chat_id, 'AgADBAADs6cxGzUzbQxexP2T2a-adBglKRkABMpEBOZWpCSM28kBAAEC')
       elif (command == '/coelho') or (command == '/coelho@Motivationalbot'):
-          bot.sendPhoto(chat_id, 'AgADBAADtKcxGzUzbQwpIxsq-03yxxk1QxkABPZSrp_yb3SMsswAAgI')
+          bot.sendPhoto(chat_id, 'AgADBAADtKcxGzUzbQwpIx2q-03yxxk1QxkABPZSrp_yb3SMsswAAgI')
       elif (command == '/gandhi') or (command == '/gandhi@Motivationalbot'):
-          bot.sendPhoto(chat_id, 'AgADBAADtacxGzUzbQxsRSsJs6Ladr0SQxkABGT07dZpjudP9sgAAgI')
+          bot.sendPhoto(chat_id, 'AgADBAADtacxGzUzbQxsRS2Js6Ladr0SQxkABGT07dZpjudP9sgAAgI')
       # Comandos para gifs
       elif (command == '/deporte') or (command == '/deporte@Motivationalbot'):
-          bot.sendDocument(chat_id, 'BQADBAADBwADNTNtDOEbDxhpS53PAg')
+          bot.sendDocument(chat_id, 'BQADBAADBwADNTNtDOE2DxhpS53PAg')
       elif (command == '/exito') or (command == '/exito@Motivationalbot'):
-          bot.sendDocument(chat_id, 'BQADBAADCAADNTNtDNJhaddEMarKAg')
+          bot.sendDocument(chat_id, 'BQADBAADCAADNTNtDNJ2addEMarKAg')
       elif (command == '/alimentacion') or (command == '/alimentacion@Motivationalbot'):
-          bot.sendDocument(chat_id, 'BQADBAADCQADNTNtDBREjMrovML1Ag')
+          bot.sendDocument(chat_id, 'BQADBAADCQADNTNtDBREjMrovML2Ag')
     elif content_type == 'sticker':
       sticker = msg['sticker']['file_id']
       print 'Sticker: %s' % sticker
