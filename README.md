@@ -8,8 +8,8 @@ Create a bot
 - Follow the instructions and obtain a TOKEN.
 - The commands that you define with /setcommands will see in the list of commands whenever users type '/' in a conversation with your bot. However, your bot will can answer anything you want.
 
- Use Telepot
- ----------
+Use Telepot
+----------
 Based on [Telepot](https://github.com/nickoala/telepot) framework from Python
 ```
 $ sudo pip install telepot
