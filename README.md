@@ -1,5 +1,5 @@
-# Motivational Bot
-Telegram bot to publish various motivational quotes
+# Telegram Bot
+Telegram bot to publish various quotes. Randomly or specificly.
 
 Create a bot
 ----------
