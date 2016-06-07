@@ -4,6 +4,7 @@ import time
 import random
 import telepot
 from telepot.namedtuple import ReplyKeyboardMarkup
+# En el fichero variables.py están las frases
 from variables import *
 
 def handle(msg):
@@ -32,6 +33,7 @@ def handle(msg):
       o sendDocument (cuando es un gif)
       """
       
+      # Comandos de ayuda
       if (command == '/ayudagifs') or (command == '/ayudagifs@Motivationalbot'):
           bot.sendMessage(chat_id, ayudagifs, 'Markdown')
       elif (command == '/ayudafrases') or (command == '/ayudafrases@Motivationalbot'):
@@ -46,6 +48,7 @@ def handle(msg):
                  resize_keyboard=True,
                  one_time_keyboard=True)
         bot.sendMessage(chat_id, '*Selecciona un tipo de ayuda*', 'Markdown', reply_markup=markup)
+      # Comandos para frases
       elif (command == '/fraseneruda') or (command == '/fraseneruda@Motivationalbot'):
           bot.sendMessage(chat_id, neruda[random.randint(0,len(neruda)-1)], 'Markdown')
       elif (command == '/frasefranklin') or (command == '/frasefranklin@Motivationalbot'):
@@ -60,6 +63,7 @@ def handle(msg):
           bot.sendMessage(chat_id, coelho[random.randint(0,len(coelho)-1)], 'Markdown')
       elif (command == '/frasegandhi') or (command == '/frasegandhi@Motivationalbot'):
           bot.sendMessage(chat_id, gandhi[random.randint(0,len(gandhi)-1)], 'Markdown')
+      # Comandos para imagenes
       elif (command == '/neruda') or (command == '/neruda@Motivationalbot'):
           bot.sendPhoto(chat_id, 'AgADBAADsacxGzUzbQxX2lpmzJvN1QMdQxkABKp9NOQsw5y_u8wAAgI')
       elif (command == '/franklin') or (command == '/franklin@Motivationalbot'):
@@ -70,6 +74,7 @@ def handle(msg):
           bot.sendPhoto(chat_id, 'AgADBAADtKcxGzUzbQwpIxsq-03yxxk1QxkABPZSrp_yb3SMsswAAgI')
       elif (command == '/gandhi') or (command == '/gandhi@Motivationalbot'):
           bot.sendPhoto(chat_id, 'AgADBAADtacxGzUzbQxsRSsJs6Ladr0SQxkABGT07dZpjudP9sgAAgI')
+      # Comandos para gifs
       elif (command == '/deporte') or (command == '/deporte@Motivationalbot'):
           bot.sendDocument(chat_id, 'BQADBAADBwADNTNtDOEbDxhpS53PAg')
       elif (command == '/exito') or (command == '/exito@Motivationalbot'):
